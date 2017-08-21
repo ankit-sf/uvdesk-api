@@ -27,7 +27,7 @@
         "parameters" : [ {
           "name" : "id",
           "in" : "path",
-          "required" : false,
+          "required" : true,
           "type" : "string",
           "description" : "This api uses ticket IncrementId, while all other uses ticketId"
         }, {
