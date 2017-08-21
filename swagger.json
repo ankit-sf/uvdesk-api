@@ -33,7 +33,7 @@
         }, {
           "name" : "_format",
           "in" : "path",
-          "required" : true,
+          "required" : false,
           "enum" : [ "json" ],
           "type" : "string",
           "description" : ""
