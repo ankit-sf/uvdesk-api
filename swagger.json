@@ -17,7 +17,7 @@
   "consumes" : [ "application/json" ],
   "produces" : [ "application/json" ],
   "paths" : {
-    "/ticket/{id}.json" : {
+    "/ticket/{id}.{_format}" : {
       "get" : {
         "description" : "View a ticket",
         "tags" : [ "Ticket" ],
@@ -27,9 +27,9 @@
         "parameters" : [ {
           "name" : "id",
           "in" : "path",
-          "required" : true,
+          "required" : false,
           "type" : "string",
-          "description" : "This api uses ticket IncrementId, while all other uses ticket id"
+          "description" : "This api uses ticket IncrementId, while all other uses ticketId"
         }, {
           "name" : "_format",
           "in" : "path",
@@ -54,9 +54,9 @@
         "x-unitTests" : [ ],
         "x-operation-settings" : {
           "CollectParameters" : false,
-          "AllowDynamicQueryParameters" : true,
+          "AllowDynamicQueryParameters" : false,
           "AllowDynamicFormParameters" : false,
-          "IsMultiContentStreaming" : true
+          "IsMultiContentStreaming" : false
         }
       },
       "put" : {
@@ -112,8 +112,8 @@
         "x-unitTests" : [ ],
         "x-operation-settings" : {
           "CollectParameters" : false,
-          "AllowDynamicQueryParameters" : true,
-          "AllowDynamicFormParameters" : true,
+          "AllowDynamicQueryParameters" : false,
+          "AllowDynamicFormParameters" : false,
           "IsMultiContentStreaming" : false
         }
       },
@@ -249,7 +249,7 @@
         "x-unitTests" : [ ],
         "x-operation-settings" : {
           "CollectParameters" : false,
-          "AllowDynamicQueryParameters" : true,
+          "AllowDynamicQueryParameters" : false,
           "AllowDynamicFormParameters" : false,
           "IsMultiContentStreaming" : false
         }
@@ -3226,7 +3226,24 @@
           "required" : false,
           "type" : "string",
           "description" : "search email-Templates by name"
-        } ]
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : ""
+          },
+          "400" : {
+            "description" : "Returned when Bad Request",
+            "schema" : { }
+          },
+          "401" : {
+            "description" : "Returned when helpdesk expired",
+            "schema" : { }
+          },
+          "404" : {
+            "description" : "Returned when the page is not found",
+            "schema" : { }
+          }
+        }
       }
     },
     "/labels.{_format}" : {
