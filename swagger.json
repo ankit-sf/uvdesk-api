@@ -2872,7 +2872,24 @@
           "required" : false,
           "type" : "string",
           "description" : "mailbox address"
-        } ]
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : ""
+          },
+          "400" : {
+            "description" : "Returned when Bad Request",
+            "schema" : { }
+          },
+          "401" : {
+            "description" : "Returned when helpdesk expired",
+            "schema" : { }
+          },
+          "404" : {
+            "description" : "Returned when the page is not found",
+            "schema" : { }
+          }
+        }
       }
     },
     "/mailbox/{id}.{_format}" : {
