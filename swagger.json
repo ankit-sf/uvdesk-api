@@ -29,7 +29,7 @@
           "in" : "path",
           "required" : true,
           "type" : "string",
-          "description" : "This api uses ticket IncrementId, while all other uses ticketId"
+          "description" : "This api uses ticket IncrementId, while all other uses ticket id"
         }, {
           "name" : "_format",
           "in" : "path",
@@ -54,7 +54,7 @@
         "x-unitTests" : [ ],
         "x-operation-settings" : {
           "CollectParameters" : false,
-          "AllowDynamicQueryParameters" : false,
+          "AllowDynamicQueryParameters" : true,
           "AllowDynamicFormParameters" : false,
           "IsMultiContentStreaming" : false
         }
