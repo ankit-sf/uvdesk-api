@@ -3066,7 +3066,20 @@
           "required" : false,
           "type" : "string",
           "description" : "message (may be in html format, can contain placeholders like {%ticket.id%})"
-        } ]
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : ""
+          },
+          "401" : {
+            "description" : "Returned when helpdesk expired",
+            "schema" : { }
+          },
+          "404" : {
+            "description" : "Returned when the page is not found",
+            "schema" : { }
+          }
+        }
       }
     },
     "/email-template/{template}.{_format}" : {
