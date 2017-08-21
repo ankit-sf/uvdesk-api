@@ -29,7 +29,7 @@
           "in" : "path",
           "required" : true,
           "type" : "string",
-          "description" : "This api uses ticket IncrementId, while all other uses ticket id"
+          "description" : "This api uses ticket IncrementId, while all other uses ticketId"
         }, {
           "name" : "_format",
           "in" : "path",
@@ -3226,24 +3226,7 @@
           "required" : false,
           "type" : "string",
           "description" : "search email-Templates by name"
-        } ],
-        "responses" : {
-          "200" : {
-            "description" : ""
-          },
-          "400" : {
-            "description" : "Returned when Bad Request",
-            "schema" : { }
-          },
-          "401" : {
-            "description" : "Returned when helpdesk expired",
-            "schema" : { }
-          },
-          "404" : {
-            "description" : "Returned when the page is not found",
-            "schema" : { }
-          }
-        }
+        } ]
       }
     },
     "/labels.{_format}" : {
