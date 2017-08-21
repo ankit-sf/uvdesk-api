@@ -17,7 +17,7 @@
   "consumes" : [ "application/json" ],
   "produces" : [ "application/json" ],
   "paths" : {
-    "/ticket/{id}.{_format}" : {
+    "/ticket/{id}.json" : {
       "get" : {
         "description" : "View a ticket",
         "tags" : [ "Ticket" ],
@@ -29,11 +29,11 @@
           "in" : "path",
           "required" : true,
           "type" : "string",
-          "description" : "This api uses ticket IncrementId, while all other uses ticketId"
+          "description" : "This api uses ticket IncrementId, while all other uses ticket id"
         }, {
           "name" : "_format",
           "in" : "path",
-          "required" : false,
+          "required" : true,
           "enum" : [ "json" ],
           "type" : "string",
           "description" : ""
@@ -47,16 +47,16 @@
             "examples" : { }
           },
           "404" : {
-            "description" : "Returned when the page is not found",
+            "description" : "Returned when the page is not found.",
             "schema" : { }
           }
         },
         "x-unitTests" : [ ],
         "x-operation-settings" : {
           "CollectParameters" : false,
-          "AllowDynamicQueryParameters" : false,
+          "AllowDynamicQueryParameters" : true,
           "AllowDynamicFormParameters" : false,
-          "IsMultiContentStreaming" : false
+          "IsMultiContentStreaming" : true
         }
       },
       "put" : {
@@ -112,8 +112,8 @@
         "x-unitTests" : [ ],
         "x-operation-settings" : {
           "CollectParameters" : false,
-          "AllowDynamicQueryParameters" : false,
-          "AllowDynamicFormParameters" : false,
+          "AllowDynamicQueryParameters" : true,
+          "AllowDynamicFormParameters" : true,
           "IsMultiContentStreaming" : false
         }
       },
@@ -249,7 +249,7 @@
         "x-unitTests" : [ ],
         "x-operation-settings" : {
           "CollectParameters" : false,
-          "AllowDynamicQueryParameters" : false,
+          "AllowDynamicQueryParameters" : true,
           "AllowDynamicFormParameters" : false,
           "IsMultiContentStreaming" : false
         }
@@ -3226,24 +3226,7 @@
           "required" : false,
           "type" : "string",
           "description" : "search email-Templates by name"
-        } ],
-        "responses" : {
-          "200" : {
-            "description" : ""
-          },
-          "400" : {
-            "description" : "Returned when Bad Request",
-            "schema" : { }
-          },
-          "401" : {
-            "description" : "Returned when helpdesk expired",
-            "schema" : { }
-          },
-          "404" : {
-            "description" : "Returned when the page is not found",
-            "schema" : { }
-          }
-        }
+        } ]
       }
     },
     "/labels.{_format}" : {
