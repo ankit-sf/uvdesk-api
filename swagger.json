@@ -17,7 +17,7 @@
   "consumes" : [ "application/json" ],
   "produces" : [ "application/json" ],
   "paths" : {
-    "/ticket/{id}.{_format}" : {
+    "/ticket/{id}.json" : {
       "get" : {
         "description" : "View a ticket",
         "tags" : [ "Ticket" ],
@@ -56,7 +56,7 @@
           "CollectParameters" : false,
           "AllowDynamicQueryParameters" : true,
           "AllowDynamicFormParameters" : false,
-          "IsMultiContentStreaming" : false
+          "IsMultiContentStreaming" : true
         }
       },
       "put" : {
@@ -112,8 +112,8 @@
         "x-unitTests" : [ ],
         "x-operation-settings" : {
           "CollectParameters" : false,
-          "AllowDynamicQueryParameters" : false,
-          "AllowDynamicFormParameters" : false,
+          "AllowDynamicQueryParameters" : true,
+          "AllowDynamicFormParameters" : true,
           "IsMultiContentStreaming" : false
         }
       },
@@ -249,7 +249,7 @@
         "x-unitTests" : [ ],
         "x-operation-settings" : {
           "CollectParameters" : false,
-          "AllowDynamicQueryParameters" : false,
+          "AllowDynamicQueryParameters" : true,
           "AllowDynamicFormParameters" : false,
           "IsMultiContentStreaming" : false
         }
