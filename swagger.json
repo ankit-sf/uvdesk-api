@@ -30,13 +30,6 @@
           "required" : true,
           "type" : "string",
           "description" : "This api uses ticket IncrementId, while all other uses ticket id"
-        }, {
-          "name" : "_format",
-          "in" : "path",
-          "required" : true,
-          "enum" : [ "json" ],
-          "type" : "string",
-          "description" : ""
         } ],
         "responses" : {
           "200" : {
@@ -70,13 +63,6 @@
           "name" : "id",
           "in" : "path",
           "required" : true,
-          "type" : "string",
-          "description" : ""
-        }, {
-          "name" : "_format",
-          "in" : "path",
-          "required" : true,
-          "enum" : [ "json" ],
           "type" : "string",
           "description" : ""
         }, {
@@ -129,13 +115,6 @@
           "required" : true,
           "type" : "string",
           "description" : ""
-        }, {
-          "name" : "_format",
-          "in" : "path",
-          "required" : true,
-          "enum" : [ "json" ],
-          "type" : "string",
-          "description" : ""
         } ],
         "responses" : {
           "200" : {
@@ -169,13 +148,6 @@
           "name" : "id",
           "in" : "path",
           "required" : true,
-          "type" : "string",
-          "description" : ""
-        }, {
-          "name" : "_format",
-          "in" : "path",
-          "required" : true,
-          "enum" : [ "json" ],
           "type" : "string",
           "description" : ""
         }, {
@@ -1129,12 +1101,6 @@
         "operationId" : "get_api-sub-groups",
         "produces" : [ "application/json" ],
         "parameters" : [ {
-          "name" : "_locale",
-          "in" : "path",
-          "required" : true,
-          "type" : "string",
-          "description" : ""
-        }, {
           "name" : "_format",
           "in" : "path",
           "required" : true,
@@ -1185,12 +1151,6 @@
         "produces" : [ "application/json" ],
         "consumes" : [ "application/x-www-form-urlencoded" ],
         "parameters" : [ {
-          "name" : "_locale",
-          "in" : "path",
-          "required" : true,
-          "type" : "string",
-          "description" : ""
-        }, {
           "name" : "_format",
           "in" : "path",
           "required" : true,
@@ -1250,12 +1210,6 @@
         "produces" : [ "application/json" ],
         "consumes" : [ "application/x-www-form-urlencoded" ],
         "parameters" : [ {
-          "name" : "_locale",
-          "in" : "path",
-          "required" : true,
-          "type" : "string",
-          "description" : ""
-        }, {
           "name" : "id",
           "in" : "path",
           "required" : true,
@@ -1321,12 +1275,6 @@
         "operationId" : "delete_api-sub-group",
         "produces" : [ "application/json" ],
         "parameters" : [ {
-          "name" : "_locale",
-          "in" : "path",
-          "required" : true,
-          "type" : "string",
-          "description" : ""
-        }, {
           "name" : "id",
           "in" : "path",
           "required" : true,
@@ -2593,12 +2541,6 @@
         "operationId" : "get_api-groups",
         "produces" : [ "application/json" ],
         "parameters" : [ {
-          "name" : "_locale",
-          "in" : "path",
-          "required" : true,
-          "type" : "string",
-          "description" : ""
-        }, {
           "name" : "_format",
           "in" : "path",
           "required" : true,
@@ -2649,12 +2591,6 @@
         "produces" : [ "application/json" ],
         "consumes" : [ "application/x-www-form-urlencoded" ],
         "parameters" : [ {
-          "name" : "_locale",
-          "in" : "path",
-          "required" : true,
-          "type" : "string",
-          "description" : ""
-        }, {
           "name" : "_format",
           "in" : "path",
           "required" : true,
@@ -2702,12 +2638,6 @@
         "produces" : [ "application/json" ],
         "consumes" : [ "application/x-www-form-urlencoded" ],
         "parameters" : [ {
-          "name" : "_locale",
-          "in" : "path",
-          "required" : true,
-          "type" : "string",
-          "description" : ""
-        }, {
           "name" : "id",
           "in" : "path",
           "required" : true,
@@ -2761,12 +2691,6 @@
         "operationId" : "delete_api-group",
         "produces" : [ "application/json" ],
         "parameters" : [ {
-          "name" : "_locale",
-          "in" : "path",
-          "required" : true,
-          "type" : "string",
-          "description" : ""
-        }, {
           "name" : "id",
           "in" : "path",
           "required" : true,
@@ -2806,12 +2730,6 @@
         "operationId" : "get_api-mailboxes",
         "produces" : [ "application/json" ],
         "parameters" : [ {
-          "name" : "_locale",
-          "in" : "path",
-          "required" : true,
-          "type" : "string",
-          "description" : ""
-        }, {
           "name" : "_format",
           "in" : "path",
           "required" : true,
@@ -2848,12 +2766,6 @@
         "produces" : [ "application/json" ],
         "consumes" : [ "application/x-www-form-urlencoded" ],
         "parameters" : [ {
-          "name" : "_locale",
-          "in" : "path",
-          "required" : true,
-          "type" : "string",
-          "description" : ""
-        }, {
           "name" : "_format",
           "in" : "path",
           "required" : true,
@@ -2901,12 +2813,6 @@
         "produces" : [ "application/json" ],
         "consumes" : [ "application/x-www-form-urlencoded" ],
         "parameters" : [ {
-          "name" : "_locale",
-          "in" : "path",
-          "required" : true,
-          "type" : "string",
-          "description" : ""
-        }, {
           "name" : "id",
           "in" : "path",
           "required" : true,
@@ -2953,12 +2859,6 @@
         "produces" : [ "application/json" ],
         "consumes" : [ "application/x-www-form-urlencoded" ],
         "parameters" : [ {
-          "name" : "_locale",
-          "in" : "path",
-          "required" : true,
-          "type" : "string",
-          "description" : ""
-        }, {
           "name" : "id",
           "in" : "path",
           "required" : true,
@@ -3006,12 +2906,6 @@
         "operationId" : "get_api-email-templates",
         "produces" : [ "application/json" ],
         "parameters" : [ {
-          "name" : "_locale",
-          "in" : "path",
-          "required" : true,
-          "type" : "string",
-          "description" : ""
-        }, {
           "name" : "_format",
           "in" : "path",
           "required" : true,
@@ -3070,12 +2964,6 @@
         "produces" : [ "application/json" ],
         "consumes" : [ "application/x-www-form-urlencoded" ],
         "parameters" : [ {
-          "name" : "_locale",
-          "in" : "path",
-          "required" : true,
-          "type" : "string",
-          "description" : ""
-        }, {
           "name" : "_format",
           "in" : "path",
           "required" : true,
@@ -3125,12 +3013,6 @@
         "produces" : [ "application/json" ],
         "consumes" : [ "application/x-www-form-urlencoded" ],
         "parameters" : [ {
-          "name" : "_locale",
-          "in" : "path",
-          "required" : true,
-          "type" : "string",
-          "description" : ""
-        }, {
           "name" : "template",
           "in" : "path",
           "required" : true,
@@ -3190,12 +3072,6 @@
         "operationId" : "delete_api-email-template",
         "produces" : [ "application/json" ],
         "parameters" : [ {
-          "name" : "_locale",
-          "in" : "path",
-          "required" : true,
-          "type" : "string",
-          "description" : ""
-        }, {
           "name" : "template",
           "in" : "path",
           "required" : true,
@@ -3226,7 +3102,24 @@
           "required" : false,
           "type" : "string",
           "description" : "search email-Templates by name"
-        } ]
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : ""
+          },
+          "400" : {
+            "description" : "Returned when Bad Request",
+            "schema" : { }
+          },
+          "401" : {
+            "description" : "Returned when helpdesk expired",
+            "schema" : { }
+          },
+          "404" : {
+            "description" : "Returned when the page is not found",
+            "schema" : { }
+          }
+        }
       }
     },
     "/labels.{_format}" : {
@@ -3238,12 +3131,6 @@
         "produces" : [ "application/json" ],
         "consumes" : [ "application/x-www-form-urlencoded" ],
         "parameters" : [ {
-          "name" : "_locale",
-          "in" : "path",
-          "required" : true,
-          "type" : "string",
-          "description" : ""
-        }, {
           "name" : "_format",
           "in" : "path",
           "required" : true,
@@ -3285,12 +3172,6 @@
         "produces" : [ "application/json" ],
         "consumes" : [ "application/x-www-form-urlencoded" ],
         "parameters" : [ {
-          "name" : "_locale",
-          "in" : "path",
-          "required" : true,
-          "type" : "string",
-          "description" : ""
-        }, {
           "name" : "id",
           "in" : "path",
           "required" : true,
@@ -3336,12 +3217,6 @@
         "operationId" : "delete_api-label",
         "produces" : [ "application/json" ],
         "parameters" : [ {
-          "name" : "_locale",
-          "in" : "path",
-          "required" : true,
-          "type" : "string",
-          "description" : ""
-        }, {
           "name" : "id",
           "in" : "path",
           "required" : true,
